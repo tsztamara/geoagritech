@@ -1,59 +1,100 @@
-# AgroDrone
+# AgroDrone Landing Page
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.6.
+Modern responsive landing page for an agricultural drone business built with Angular.
 
-## Development server
+## 🚀 Features
 
-To start a local development server, run:
+* Responsive modern UI
+* Smooth scrolling navigation
+* Hero section with CTA
+* About section
+* Technology showcase
+* Contact form
+* Mobile-friendly navigation
+* Clean component-based architecture
+
+## 🛠️ Tech Stack
+
+* Angular
+* TypeScript
+* SCSS
+* HTML5
+* Responsive Design
+
+## 📱 Responsive Design
+
+The application is fully responsive and optimized for:
+
+* Desktop
+* Tablet
+* Mobile devices
+
+## 📂 Project Structure
+
+```bash
+src/
+ ├── app/
+ │    ├── components/
+ │    ├── pages/
+ │    ├── services/
+ │    └── shared/
+ ├── assets/
+ └── styles/
+```
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/tsztamara/agro-drone.git
+```
+
+Navigate to the project folder:
+
+```bash
+cd agro-drone
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Open your browser at:
 
 ```bash
-ng generate component component-name
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🏗️ Build
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+To create a production build:
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 🌍 Future Improvements
 
-## Running unit tests
+* Backend integration
+* Dynamic contact form
+* Multi-language support
+* CMS integration
+* SEO optimization
+* Deployment pipeline
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+## 👩‍💻 Author
 
-```bash
-ng test
-```
+Developed by Tamara Takács-Szabados
 
-## Running end-to-end tests
+## 📄 License
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This project is licensed under the MIT License.
