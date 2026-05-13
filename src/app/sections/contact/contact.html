@@ -1,0 +1,60 @@
+<section class="contact" id="contact">
+  <div class="contact-content">
+    <div class="contact-info">
+      <span class="section-eyebrow">Kapcsolat</span>
+
+      <h2>Kérjen személyre szabott árajánlatot</h2>
+
+      <p>
+        Vegye fel velünk a kapcsolatot, és segítünk megtalálni a területéhez legjobban illeszkedő
+        drónos permetezési megoldást.
+      </p>
+
+      <div class="contact-details">
+        <div>
+          <strong>Telefon</strong>
+          <span>+36 30 000 0000</span>
+        </div>
+
+        <div>
+          <strong>E-mail</strong>
+          <span>info@agrodrone.hu</span>
+        </div>
+
+        <div>
+          <strong>Szolgáltatási terület</strong>
+          <span>Magyarország</span>
+        </div>
+      </div>
+    </div>
+
+    <form class="contact-form" (submit)="sendEmail($event)">
+      <div class="form-group">
+        <label for="name">Név</label>
+        <input id="name" name="name" type="text" placeholder="Teljes név" />
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mail cím</label>
+        <input id="email" name="email" type="email" placeholder="email@example.com" />
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Telefonszám</label>
+        <input id="phone" name="phone" type="tel" placeholder="+36..." />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Üzenet</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Írja le röviden, milyen területre vagy szolgáltatásra kér ajánlatot..."
+        ></textarea>
+      </div>
+
+      <button type="submit">Ajánlatkérés küldése</button>
+    </form>
+  </div>
+</section>

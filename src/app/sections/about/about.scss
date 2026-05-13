@@ -1,0 +1,148 @@
+.about {
+  padding: 7rem 8%;
+  background: var(--color-bg);
+}
+
+.about-content {
+  max-width: 1400px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.about-text h2 {
+  margin: 1rem 0 2rem;
+
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1.1;
+
+  color: var(--color-primary-dark);
+}
+
+.about-text p {
+  margin-bottom: 1.5rem;
+
+  font-size: 1.05rem;
+  line-height: 1.9;
+
+  color: rgba(43, 43, 43, 0.82);
+}
+
+.about-features {
+  margin-top: 2.5rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  padding: 1rem 1.2rem;
+
+  background: rgba(255, 255, 255, 0.72);
+
+  border-radius: 18px;
+
+  border: 1px solid rgba(54, 69, 43, 0.08);
+
+  font-weight: 500;
+}
+
+.feature-item span {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.about-visual {
+  position: relative;
+}
+
+.about-image {
+  height: 620px;
+
+  border-radius: 32px;
+
+  background:
+    linear-gradient(rgba(38, 51, 29, 0.15), rgba(38, 51, 29, 0.2)), url('/images/about-drone.jpg');
+
+  background-size: cover;
+  background-position: center;
+
+  box-shadow: 0 20px 50px rgba(38, 51, 29, 0.15);
+}
+
+.about-card {
+  position: absolute;
+
+  left: -40px;
+  bottom: 40px;
+
+  z-index: 5;
+
+  padding: 2rem;
+
+  background: rgba(255, 255, 255, 0.9);
+
+  backdrop-filter: blur(10px);
+
+  border-radius: 28px;
+
+  box-shadow: 0 20px 40px rgba(38, 51, 29, 0.12);
+}
+
+.card-number {
+  font-size: 3rem;
+  font-weight: 700;
+
+  color: var(--color-primary-dark);
+}
+
+.card-label {
+  margin-top: 0.5rem;
+
+  color: rgba(43, 43, 43, 0.75);
+}
+
+@media (max-width: 1100px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image {
+    height: 500px;
+  }
+
+  .about-card {
+    left: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .about {
+    padding: 5rem 6%;
+  }
+
+  .about-features {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image {
+    height: 400px;
+  }
+
+  .about-card {
+    position: relative;
+
+    left: 0;
+    bottom: -20px;
+
+    margin-bottom: 2rem;
+  }
+}
