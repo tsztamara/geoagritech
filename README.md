@@ -1,64 +1,90 @@
 # GeoAgriTech
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.6.
+Modern Angular alapú landing page precíziós mezőgazdasági drónos permetezési szolgáltatások bemutatására.
 
-## Development server
+## Projekt áttekintés
 
-To start a local development server, run:
+A GeoAgriTech weboldal célja a vállalkozás szolgáltatásainak, technológiájának és elérhetőségeinek professzionális bemutatása egy gyors, modern és reszponzív felületen.
 
-```bash
-src/
- ├── app/
- │    ├── components/
- │    ├── pages/
- │    ├── services/
- │    └── shared/
- ├── assets/
- └── styles/
-```
+## Fő funkciók
 
-## ⚙️ Installation
+* Modern Hero szekció
+* Szolgáltatások bemutatása
+* Technológiai megoldások ismertetése
+* Rólunk szekció
+* Kapcsolati űrlap
+* Reszponzív kialakítás
+* Mobilbarát navigáció
+* SVG ikonok (Lucide)
+* Angular 21 alapú SPA alkalmazás
 
-Clone the repository:
+## Technológiák
 
-```bash
-git clone https://github.com/tsztamara/agro-drone.git
-```
+* Angular 21
+* TypeScript
+* SCSS
+* Lucide Angular
+* Vite
+* SSR / Prerender támogatás
 
-Navigate to the project folder:
+## Fejlesztői környezet
 
-```bash
-cd agro-drone
-```
-
-Install dependencies:
+Telepítés:
 
 ```bash
 npm install
 ```
 
-Start the development server:
+Fejlesztői szerver indítása:
 
 ```bash
 ng serve
 ```
 
-Open your browser at:
+vagy
 
 ```bash
-http://localhost:4200
+npm start
 ```
 
-## 🏗️ Build
-
-To create a production build:
+Build készítése:
 
 ```bash
-ng e2e
+npm run build
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Projekt struktúra
 
-## Additional Resources
+```text
+src/
+ ├── app/
+ │   ├── components/
+ │   │   ├── navbar/
+ │   │   ├── hero/
+ │   │   ├── services/
+ │   │   ├── technology/
+ │   │   ├── about/
+ │   │   ├── contact/
+ │   │   └── footer/
+ │   └── pages/
+ ├── assets/
+ └── styles.scss
+```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Domain
+
+geoagritech.hu
+
+## Stílus
+
+A projekt színvilága:
+
+* Military Green
+* Beige
+* Földszínek
+
+a mezőgazdasági és technológiai arculat ötvözésére épül.
+
+## Licenc
+
+© GeoAgriTech. Minden jog fenntartva.
