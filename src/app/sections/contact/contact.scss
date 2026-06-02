@@ -1,6 +1,7 @@
 .contact {
   padding: 7rem 8%;
   background: linear-gradient(rgba(38, 51, 29, 0.9), rgba(38, 51, 29, 0.94));
+  overflow: hidden;
 }
 
 .contact-content {
@@ -8,7 +9,7 @@
   margin: 0 auto;
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 520px);
   gap: 5rem;
   align-items: center;
 }
@@ -66,6 +67,8 @@
 }
 
 .contact-form {
+  width: 100%;
+  min-width: 0;
   padding: 2.5rem;
 
   background: rgba(245, 241, 232, 0.96);
@@ -90,6 +93,7 @@ label {
 input,
 textarea {
   width: 100%;
+  max-width: 100%;
 
   padding: 1rem 1.1rem;
 

@@ -1,12 +1,18 @@
 import { Component } from '@angular/core';
+import { Sprout, Users, Crosshair, Clock3, LucideAngularModule } from 'lucide-angular';
 
 @Component({
   selector: 'app-hero',
-  imports: [],
+  imports: [LucideAngularModule],
   templateUrl: './hero.html',
   styleUrl: './hero.scss',
 })
 export class Hero {
+  readonly Sprout = Sprout;
+  readonly Users = Users;
+  readonly Crosshair = Crosshair;
+  readonly Clock3 = Clock3;
+
   scrollToSection(sectionId: string): void {
     const element = document.getElementById(sectionId);
 

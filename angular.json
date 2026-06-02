@@ -7,7 +7,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "agro-drone": {
+    "geoagritech": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -30,9 +30,7 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "styles": ["src/styles.scss"],
             "server": "src/main.server.ts",
             "outputMode": "server",
             "security": {
@@ -70,10 +68,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "agro-drone:build:production"
+              "buildTarget": "geoagritech:build:production"
             },
             "development": {
-              "buildTarget": "agro-drone:build:development"
+              "buildTarget": "geoagritech:build:development"
             }
           },
           "defaultConfiguration": "development"

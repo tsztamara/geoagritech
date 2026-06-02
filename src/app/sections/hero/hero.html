@@ -1,18 +1,53 @@
 <section class="hero" id="home">
-  <div class="hero-content">
-    <span class="eyebrow">Precíziós mezőgazdaság</span>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <span class="eyebrow">Precíziós mezőgazdaság</span>
 
-    <h1>Modern drónos permetezési megoldások</h1>
+      <h1>Modern drónos permetezési megoldások</h1>
 
-    <p>
-      Hatékony, gyors és precíz permetezési szolgáltatások modern mezőgazdasági technológiával,
-      professzionális kivitelezéssel.
-    </p>
+      <p>
+        Hatékony, gyors és precíz permetezési szolgáltatások modern mezőgazdasági technológiával,
+        professzionális kivitelezéssel.
+      </p>
 
-    <div class="hero-actions">
-      <a (click)="scrollToSection('contact')" class="primary-btn"> Árajánlat kérése </a>
+      <div class="hero-actions">
+        <a (click)="scrollToSection('contact')" class="primary-btn"> Árajánlat kérése </a>
 
-      <a (click)="scrollToSection('services')" class="secondary-btn"> Szolgáltatások </a>
+        <a (click)="scrollToSection('services')" class="secondary-btn"> Szolgáltatások </a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <lucide-angular [img]="Sprout"></lucide-angular>
+        <div>
+          <span>500+</span>
+          <p>Kezelt hektár</p>
+        </div>
+      </div>
+
+      <div class="stat-item">
+        <lucide-angular [img]="Users"></lucide-angular>
+        <div>
+          <span>50+</span>
+          <p>Elégedett ügyfél</p>
+        </div>
+      </div>
+
+      <div class="stat-item">
+        <lucide-angular [img]="Crosshair"></lucide-angular>
+        <div>
+          <span>98%</span>
+          <p>Pontosság</p>
+        </div>
+      </div>
+
+      <div class="stat-item">
+        <lucide-angular [img]="Clock3"></lucide-angular>
+        <div>
+          <span>24/7</span>
+          <p>Rugalmasság</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>

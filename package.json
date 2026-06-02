@@ -1,5 +1,5 @@
 {
-  "name": "agro-drone",
+  "name": "geoagritech",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:agro-drone": "node dist/agro-drone/server/server.mjs"
+    "serve:ssr:geoagritech": "node dist/geoagritech/server/server.mjs"
   },
   "private": true,
   "packageManager": "npm@10.8.2",
@@ -20,7 +20,9 @@
     "@angular/platform-server": "^21.2.0",
     "@angular/router": "^21.2.0",
     "@angular/ssr": "^21.2.6",
+    "@emailjs/browser": "^4.4.1",
     "express": "^5.1.0",
+    "lucide-angular": "^1.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "^0.16.2"
