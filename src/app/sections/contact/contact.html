@@ -28,20 +28,41 @@
       </div>
     </div>
 
-    <form class="contact-form" (submit)="sendEmail($event)">
+    <form #contactForm="ngForm" class="contact-form" (submit)="sendEmail($event)">
       <div class="form-group">
         <label for="name">Név</label>
-        <input id="name" name="name" type="text" placeholder="Teljes név" />
+        <input
+          id="name"
+          name="name"
+          type="text"
+          placeholder="Teljes név"
+          [(ngModel)]="name"
+          required
+        />
       </div>
 
       <div class="form-group">
         <label for="email">E-mail cím</label>
-        <input id="email" name="email" type="email" placeholder="email@example.com" />
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="email@example.com"
+          [(ngModel)]="email"
+          required
+        />
       </div>
 
       <div class="form-group">
         <label for="phone">Telefonszám</label>
-        <input id="phone" name="phone" type="tel" placeholder="+36..." />
+        <input
+          id="phone"
+          name="phone"
+          type="tel"
+          placeholder="+36..."
+          [(ngModel)]="phone"
+          required
+        />
       </div>
 
       <div class="form-group">
@@ -51,15 +72,19 @@
           name="message"
           rows="5"
           placeholder="Írja le röviden, milyen területre vagy szolgáltatásra kér ajánlatot..."
+          [(ngModel)]="message"
+          required
         ></textarea>
       </div>
       <label class="gdpr-consent">
         <input type="checkbox" [(ngModel)]="gdprAccepted" name="gdpr" required />
 
-        Elolvastam és elfogadom az
-        <a href="/adatkezelesi-tajekoztato" target="_blank"> adatkezelési tájékoztatót </a>.
+        <span>
+          Elolvastam és elfogadom az
+          <a href="/adatkezelesi-tajekoztato" target="_blank"> adatkezelési tájékoztatót </a>.
+        </span>
       </label>
-      <button [disabled]="!gdprAccepted" type="submit">Ajánlatkérés küldése</button>
+      <button type="submit" class="submit-btn" [disabled]="!canSubmit">Árajánlat küldése</button>
     </form>
   </div>
 </section>

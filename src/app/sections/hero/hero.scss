@@ -157,19 +157,35 @@ p {
 }
 
 @media (max-width: 768px) {
-  h1 {
-    font-size: 2.8rem;
-    line-height: 1.05;
+  .hero {
+    padding: 3.5rem 6% 3rem;
+    min-height: auto;
+    overflow: hidden;
   }
 
-  .hero {
-    padding: 5rem 6%;
-    min-height: calc(100vh - 72px);
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.3rem, 10vw, 3rem);
+    line-height: 1.05;
+    max-width: 100%;
+
+    word-break: normal;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    line-height: 1.6;
   }
 
   .hero-actions {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
   }
 
   .primary-btn,

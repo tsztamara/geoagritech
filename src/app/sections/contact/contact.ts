@@ -9,7 +9,21 @@ import { HttpClient } from '@angular/common/http';
   styleUrl: './contact.scss',
 })
 export class Contact {
+  name = '';
+  email = '';
+  phone = '';
+  message = '';
   gdprAccepted = false;
+
+  get canSubmit(): boolean {
+    return (
+      this.name.trim().length > 0 &&
+      this.email.trim().length > 0 &&
+      this.phone.trim().length > 0 &&
+      this.message.trim().length > 0 &&
+      this.gdprAccepted
+    );
+  }
 
   constructor(private http: HttpClient) {}
 
@@ -31,6 +45,10 @@ export class Contact {
       next: () => {
         alert('Köszönjük! Az ajánlatkérés sikeresen elküldve.');
         form.reset();
+        this.name = '';
+        this.email = '';
+        this.phone = '';
+        this.message = '';
         this.gdprAccepted = false;
       },
       error: () => {
