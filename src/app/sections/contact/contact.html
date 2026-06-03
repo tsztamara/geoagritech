@@ -13,7 +13,7 @@
       <div class="contact-details">
         <div>
           <strong>Telefon</strong>
-          <span>+36 30 000 0000</span>
+          <span>+36 20 498 2807</span>
         </div>
 
         <div>
@@ -53,8 +53,13 @@
           placeholder="Írja le röviden, milyen területre vagy szolgáltatásra kér ajánlatot..."
         ></textarea>
       </div>
+      <label class="gdpr-consent">
+        <input type="checkbox" [(ngModel)]="gdprAccepted" name="gdpr" required />
 
-      <button type="submit">Ajánlatkérés küldése</button>
+        Elolvastam és elfogadom az
+        <a href="/adatkezelesi-tajekoztato" target="_blank"> adatkezelési tájékoztatót </a>.
+      </label>
+      <button [disabled]="!gdprAccepted" type="submit">Ajánlatkérés küldése</button>
     </form>
   </div>
 </section>

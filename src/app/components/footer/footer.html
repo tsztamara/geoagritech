@@ -1,7 +1,9 @@
 <footer class="footer">
   <div class="footer-content">
     <div class="footer-brand">
-      <h3>GeoAgriTech</h3>
+      <a class="logo" (click)="scrollToSection('home')">
+        <img src="/images/GAT_logo.png" alt="GeoAgriTech Logo" />
+      </a>
 
       <p>Modern drónos permetezési megoldások precíz mezőgazdasági technológiával.</p>
     </div>
@@ -15,12 +17,19 @@
         <a (click)="scrollToSection('technology')">Technológia</a>
         <a (click)="scrollToSection('about')">Rólunk</a>
         <a (click)="scrollToSection('contact')">Kapcsolat</a>
+        <a href="/adatkezelesi-tajekoztato" target="_blank" rel="noopener noreferrer">
+          Adatkezelési tájékoztató
+        </a>
+
+        <a href="/cookie-tajekoztato" target="_blank" rel="noopener noreferrer">
+          Cookie tájékoztató
+        </a>
       </div>
 
       <div class="footer-column">
         <h4>Kapcsolat</h4>
 
-        <span>+36 30 000 0000</span>
+        <span>+36 20 498 2807</span>
         <span>info@geoagritech.hu</span>
         <span>Magyarország</span>
       </div>

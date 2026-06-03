@@ -1,14 +1,19 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './contact.html',
   styleUrl: './contact.scss',
 })
 export class Contact {
+  gdprAccepted = false;
+
   sendEmail(event: Event): void {
     event.preventDefault();
+
+    alert('Köszönjük megkeresését! Hamarosan jelentkezünk.');
 
     const form = event.target as HTMLFormElement;
 
