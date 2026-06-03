@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact',
@@ -10,31 +11,31 @@ import { FormsModule } from '@angular/forms';
 export class Contact {
   gdprAccepted = false;
 
+  constructor(private http: HttpClient) {}
+
   sendEmail(event: Event): void {
     event.preventDefault();
 
-    alert('Köszönjük megkeresését! Hamarosan jelentkezünk.');
-
     const form = event.target as HTMLFormElement;
-
     const formData = new FormData(form);
 
-    const name = formData.get('name');
-    const email = formData.get('email');
-    const phone = formData.get('phone');
-    const message = formData.get('message');
+    const payload = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      phone: formData.get('phone'),
+      message: formData.get('message'),
+      gdpr: this.gdprAccepted,
+    };
 
-    const subject = 'Árajánlatkérés';
-
-    const body = `Név: ${name}
-
-Email: ${email}
-
-Telefonszám: ${phone}
-
-Üzenet:
-${message}`;
-
-    window.location.href = `mailto:tszabados9@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    this.http.post('/send-mail.php', payload).subscribe({
+      next: () => {
+        alert('Köszönjük! Az ajánlatkérés sikeresen elküldve.');
+        form.reset();
+        this.gdprAccepted = false;
+      },
+      error: () => {
+        alert('Hiba történt az üzenet küldése közben. Kérjük, próbálja újra később.');
+      },
+    });
   }
 }
