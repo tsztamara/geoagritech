@@ -1,0 +1,29 @@
+.legal-page {
+  padding: 7rem 8%;
+  background: #f5f1e8;
+  color: var(--color-primary-dark);
+}
+
+.legal-page .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.legal-page h1 {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+
+.legal-page h2 {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+
+.legal-page p {
+  line-height: 1.7;
+}
+
+.legal-page a {
+  color: var(--color-primary);
+  font-weight: 600;
+}
