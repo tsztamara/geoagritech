@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Satellite, Radar, Sprout, ChartColumn, LucideAngularModule } from 'lucide-angular';
+import { Sprout, LucideAngularModule, Route, Gauge, Droplets, Crosshair } from 'lucide-angular';
 
 @Component({
   selector: 'app-technology',
@@ -8,8 +8,9 @@ import { Satellite, Radar, Sprout, ChartColumn, LucideAngularModule } from 'luci
   styleUrl: './technology.scss',
 })
 export class Technology {
-  readonly Satellite = Satellite;
-  readonly Radar = Radar;
   readonly Sprout = Sprout;
-  readonly ChartColumn = ChartColumn;
+  readonly Gauge = Gauge;
+  readonly Droplets = Droplets;
+  readonly Crosshair = Crosshair;
+  readonly Route = Route;
 }

@@ -1,5 +1,16 @@
 import { Component } from '@angular/core';
-import { Sprout, MapPin, Zap, Drone, LucideAngularModule } from 'lucide-angular';
+import {
+  Sprout,
+  MapPin,
+  Zap,
+  Drone,
+  LucideAngularModule,
+  ChartColumn,
+  Target,
+  Gauge,
+  Trees,
+  ScanSearch,
+} from 'lucide-angular';
 
 @Component({
   selector: 'app-services',
@@ -8,8 +19,10 @@ import { Sprout, MapPin, Zap, Drone, LucideAngularModule } from 'lucide-angular'
   styleUrl: './services.scss',
 })
 export class Services {
-  readonly Sprout = Sprout;
-  readonly MapPin = MapPin;
-  readonly Zap = Zap;
+  readonly ChartColumn = ChartColumn;
+  readonly ScanSearch = ScanSearch;
+  readonly Target = Target;
   readonly Drone = Drone;
+  readonly Gauge = Gauge;
+  readonly Trees = Trees;
 }
